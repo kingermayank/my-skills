@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Branding"
+  short_description: "Build a brand from strategy through identity and motion"
+  default_prompt: "Use $ai-branding to develop this brand from the supplied brief, continuing from any established strategy and identity decisions."
