@@ -1,5 +1,7 @@
 # My Skills
 
+Live site: [mayank-skills.vercel.app](https://mayank-skills.vercel.app).
+
 Mayank Kinger's personal skill library. A small, responsive static website with downloadable agent workflows for Codex, Claude Code, and Grok Bot.
 
 ## Run locally
@@ -19,7 +21,7 @@ Open http://localhost:4173. No dependencies or build step are needed.
 
 ## Updating a skill
 
-Edit its source in `skills/`, then run `python3 scripts/package.py`. Commit and push the source and updated downloads. When connected to Vercel, pushes to the production branch deploy the static `public/` directory.
+Edit its source in `skills/`, then run `python3 scripts/package.py`. Commit and push the source and updated downloads. Deploy the static `public/` directory with `npx vercel deploy --prod`. The initial production deployment is live. Automatic GitHub deployments are not connected: the current Vercel GitHub integration reported insufficient repository access. After the repository owner grants the Vercel integration access to `kingermayank/my-skills`, connect it in Vercel to enable deployment on push.
 
 The single-file portable Markdown is maintained in `public/downloads/ai-branding-portable.md`; update it alongside the source when procedures change. Never add course recordings, transcripts, handouts, private project files, credentials, or third-party example artwork to this repository.
 
